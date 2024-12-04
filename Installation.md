@@ -29,8 +29,8 @@ The instructions below will install the following tools:
   The rclone-browser version in the Ubuntu repositories is outdated 
   (based on [kapitainsky](https://github.com/kapitainsky/RcloneBrowser)).
   The one by [Mercenar](https://github.com/Mercenar/RcloneBrowser) is 
-  more user-friendly and has more features (like scheduler). You can install
-  this version as follows:
+  more user-friendly (like editing paths) and has more features (like scheduler). 
+  You can install this version as follows:
 
   ```bash
   sudo apt update && sudo apt -y install git g++ cmake make qtdeclarative5-dev qtmultimedia5-dev
