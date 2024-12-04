@@ -3,7 +3,7 @@
 The instructions below will install the following tools:
 
 * `rclone`: [command-line utility](https://rclone.org/)
-* `rclone-browser`: [GUI tool](https://github.com/kapitainsky/RcloneBrowser)
+* `rclone-browser`: GUI tool
 
 
 ## rclone
@@ -18,8 +18,9 @@ The instructions below will install the following tools:
 
 * Debian/Ubuntu (outdated GUI)
   
-  Use the following command to install rclone-browser: 
-
+  Use the following command to install rclone-browser (at the time of writing, 
+  based on [this code base](https://github.com/kapitainsky/RcloneBrowser)): 
+  
   ```bash
   sudo apt install rclone-browser
   ```
