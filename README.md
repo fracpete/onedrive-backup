@@ -6,4 +6,5 @@ Using OneDrive for Business as a (sort of) backup solution for Linux with
 
 * [Installation](Installation.md)
 * [Configuration](Configuration.md)
-
+* [Backup](Backup.md)
+* [Troubleshooting](Troubleshooting)
