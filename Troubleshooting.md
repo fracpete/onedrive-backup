@@ -37,3 +37,16 @@ directory).
 **NB:** It is recommended to perform a dry-run (`--dry-run`) first or 
 perform it interactively (`--interactive`), there is absolutely 
 **no** going back!
+
+
+## Slow transfers
+
+Apart from having bandwidth limitations (have you set limits on your transfer rates?)
+having a lot of little files, can result in transfers taking a long time, 
+unfortunately. Especially build environments with lots of temporary files
+that change a lot, can lead to long sync times. Since this files can be 
+regenerated at any time, they should not be synced to avoid wasting space. 
+In such a case, to speed things up, try optimizing the [exclude patterns](Backup.md#exclude-filesdirectories). 
+See section [Limited output in rclone-browser](#limited-output-in-rclone-browser)
+for how to redirect output of commands in `-n/--dry-run` mode for further
+investigation.
