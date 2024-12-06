@@ -36,7 +36,9 @@ If necessary, you can [exclude files and dirs](#exclude-filesdirectories).
 * switch to the **Tasks** tab
 * select the just saved task and click on **Edit**
 * change **mode** to **Sync**
-* if required, go to the **Exclude** tab and adapt the patterns (see [Exclude files/directories](#exclude-filesdirectories))  
+* if required, go to the **Exclude** tab and adapt the patterns (see [Exclude files/directories](#exclude-filesdirectories))
+* on the **Transfer** tab, you can limit the **Bandwidth**; that way you can 
+  avoid interfering with work too much when running this task during work hours
 
 Once you have the task saved, you can either perform a **Dry-run** to check
 the files that got synced or an actual **Run**. A job will be launched under
@@ -74,6 +76,29 @@ dir1/**       - excludes the contents of dir1 anywhere
 /dir1/**      - excludes the contents of dir1 in the root directory of the remote
 /dir/subdir/  - excludes /dir/subdir/ 
 ```
+
+## Automation
+
+### rclone
+
+**rclone** commands can be easily added to shell scripts and then executed
+via [cronjobs](https://linuxconfig.org/using-cron-scheduler-on-linux-systems) 
+or [systemd services with timers](https://linuxconfig.org/how-to-schedule-tasks-with-systemd-timers-in-linux).
+
+
+### rclone-browser
+
+When using the newer **rclone-browser** from [Mercenar](https://github.com/Mercenar/RcloneBrowser),
+then tasks can be easily scheduled in the GUI:
+
+* select the **Tasks** tab
+* right-click on the task that you want to schedule and select 
+  **Add to the scheduler**
+* on the daily schedule, select the days that you want backups to happen 
+  (typically Mon to Fri) and select the time (e.g., 12:00 or 17:00)
+* as **execution mode** select **add to the queue** if you have more than one
+  task to schedule, executing them sequentially
+
 
 ## Links
 
