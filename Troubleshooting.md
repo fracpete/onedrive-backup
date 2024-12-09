@@ -46,7 +46,13 @@ having a lot of little files, can result in transfers taking a long time,
 unfortunately. Especially build environments with lots of temporary files
 that change a lot, can lead to long sync times. Since this files can be 
 regenerated at any time, they should not be synced to avoid wasting space. 
+
 In such a case, to speed things up, try optimizing the [exclude patterns](Backup.md#exclude-filesdirectories). 
 See section [Limited output in rclone-browser](#limited-output-in-rclone-browser)
 for how to redirect output of commands in `-n/--dry-run` mode for further
 investigation.
+
+Also, you can increase the number of parallel transfers to speed up the 
+transfer. At the time of writing the default was 4, so you could increase that
+to 8 or 16. Please note that this may gobble up more bandwidth when transferring
+large files, so a bandwidth limit is recommended.
