@@ -98,6 +98,7 @@ then tasks can be easily scheduled in the GUI:
   (typically Mon to Fri) and select the time (e.g., 12:00 or 17:00)
 * as **execution mode** select **add to the queue** if you have more than one
   task to schedule, executing them sequentially
+* once in the scheduler, activate the task by clicking on the *run* button to show *Active* rather than *Paused*
 
 
 ## Links
