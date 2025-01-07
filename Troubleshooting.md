@@ -56,3 +56,10 @@ Also, you can increase the number of parallel transfers to speed up the
 transfer. At the time of writing the default was 4, so you could increase that
 to 8 or 16. Please note that this may gobble up more bandwidth when transferring
 large files, so a bandwidth limit is recommended.
+
+
+## Symlinks
+
+Add the `--links` option on the `Extra options` tab in the rclone-browser. This will
+sync them with the `.rclonelink` extension and resolve back again when going the other
+direction. See discussion [here](https://forum.rclone.org/t/cant-follow-symlink-without-l-copy-links/20650).
