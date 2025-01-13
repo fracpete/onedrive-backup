@@ -101,7 +101,26 @@ then tasks can be easily scheduled in the GUI:
 * once in the scheduler, activate the task by clicking on the *run* button to show *Active* rather than *Paused*
 
 
+## Logging
+
+By default, rclone does not log anything, you need to specify that explictly. That can be done either via the `--log-file=FILE` or `--sys-log` option.
+When using `--log-file=FILE`, create a directory where you want to store the log files.
+
+### rclone
+
+Simply add the relevant option to your `rclone` command.
+
+### rclone-browser
+
+* select the **Tasks** tab
+* **edit** the task to which you want to add logging
+* select the **Extra options** tab
+* enter the relevant option
+* save the task
+
+
 ## Links
 
 * [rclone filtering](https://rclone.org/filtering/)
 * [rclone sync](https://rclone.org/commands/rclone_sync/)
+* [rclone logging](https://rclone.org/docs/#logging)
