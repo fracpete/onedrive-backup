@@ -57,9 +57,19 @@ transfer. At the time of writing the default was 4, so you could increase that
 to 8 or 16. Please note that this may gobble up more bandwidth when transferring
 large files, so a bandwidth limit is recommended.
 
-
 ## Symlinks
 
 Add the `--links` option on the `Extra options` tab in the rclone-browser. This will
 sync them with the `.rclonelink` extension and resolve back again when going the other
 direction. See discussion [here](https://forum.rclone.org/t/cant-follow-symlink-without-l-copy-links/20650).
+
+## error: pathIsTooLong: Path is too long
+
+If you get this error, then you have run into an incompatibility between your local file system and OneDrive.
+In other words, you can have longer file names locally than in OneDrive. Unfortunately, there is no solution
+or workaround. There are only the following options:
+
+* ignore the error and accept that some dirs/files don't get transferred
+* identify the dirs/files and shorten any long (you may need to [enable logging](./Backup.md#logging))
+
+See also the article on OneDrive/SharePoint regarding [file name and path lengths](https://support.microsoft.com/en-us/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa#filenamepathlengths).
