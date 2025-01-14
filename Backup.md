@@ -118,6 +118,7 @@ Simply add the relevant option to your `rclone` command.
 * enter the relevant option
 * save the task
 
+**NB:** using the logging flags will redirect **all** output and the UI will look like nothing is happening.
 
 ## Links
 
